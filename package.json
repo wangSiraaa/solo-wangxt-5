@@ -1,0 +1,26 @@
+{
+  "name": "booklet-imposition",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:logic": "vite-node scripts/smoke.ts",
+    "test:export": "vite-node scripts/verify-export.mts",
+    "test:visual": "vite-node scripts/verify-visual.mts"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.8.69",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11",
+    "vite-node": "^2.1.9",
+    "vue-tsc": "^2.1.10"
+  }
+}
